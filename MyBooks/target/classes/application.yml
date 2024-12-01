@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: book-library
+  datasource:
+    url: jdbc:h2:mem:bookdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+  logging:
+    level:
+      org.springframework.web: INFO
+      org.hibernate: ERROR
+      com.yourproject: DEBUG
+  server:
+    port: 8080
+    servlet:
+      context-path: /api
+  # A configuração de CORS na aplicação não pode ser definida diretamente no `application.yml`
+  app:
+    cors:
+      allowed-origins: http://localhost:3000
+      allowed-methods: GET,POST,PUT,DELETE,OPTIONS

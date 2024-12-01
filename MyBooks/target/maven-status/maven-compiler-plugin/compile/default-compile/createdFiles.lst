@@ -1,0 +1,17 @@
+br\com\livro\service\AuthorService.class
+br\com\livro\controller\HomeController.class
+br\com\livro\dto\AuthorDTO.class
+br\com\livro\mapper\AuthorMapper.class
+br\com\livro\exception\GlobalExceptionHandler.class
+br\com\livro\domain\model\Book.class
+br\com\livro\exception\ResourceNotFoundException.class
+br\com\livro\domain\repository\BookRepository.class
+br\com\livro\dto\BookDTO.class
+br\com\livro\domain\model\Author.class
+br\com\livro\config\WebConfig.class
+br\com\livro\controller\BookController.class
+br\com\livro\mapper\BookMapper.class
+br\com\livro\BookLibraryApplication.class
+br\com\livro\service\BookService.class
+br\com\livro\controller\AuthorController.class
+br\com\livro\domain\repository\AuthorRepository.class
